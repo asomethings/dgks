@@ -1,0 +1,38 @@
+{
+  "name": "@dgks/owner-info",
+  "version": "0.0.0-beta.0",
+  "description": "Owner Info implementation for data.go.kr",
+  "author": {
+    "name": "Ewan Roh <asomethings@kakao.com>",
+    "url": "https://asomethings.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asomethings/dgks.git",
+    "directory": "packages/owner-info"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dgks",
+    "data.go.kr",
+    "openapi",
+    "ownerinfo",
+    "owner-info",
+    "sdk"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "dependencies": {
+    "@dgks/core": "workspace:^0.0.0-beta.0"
+  },
+  "scripts": {
+    "prepublishOnly": "pnpm build",
+    "build": "tsc -p ./tsconfig.json"
+  }
+}
