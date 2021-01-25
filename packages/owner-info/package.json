@@ -1,6 +1,6 @@
 {
   "name": "@dgks/owner-info",
-  "version": "0.0.0-beta.1",
+  "version": "0.0.0-beta.2",
   "description": "Owner Info implementation for data.go.kr",
   "author": {
     "name": "Ewan Roh <asomethings@kakao.com>",
@@ -29,7 +29,7 @@
     "node": ">=12"
   },
   "dependencies": {
-    "@dgks/core": "workspace:^0.0.0-beta.1"
+    "@dgks/core": "workspace:^0.0.0-beta.3"
   },
   "scripts": {
     "prepublishOnly": "pnpm build",
