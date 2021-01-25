@@ -12,9 +12,22 @@ export class Response<T> {
     return this.parsedResponse.body.items.item
   }
 
+  public get numOfRows(): number {
+    return this.parsedResponse.body.numOfRows
+  }
+
+  public get page(): number {
+    return this.parsedResponse.body.pageNo
+  }
+
+  public get totalCount(): number {
+    return this.parsedResponse.body.totalCount
+  }
+
   // ====================================
-  // Protected Function
+  // Protected Functions
   // ====================================
+
   protected parseRawResponse(obj: Record<string, any>): ResponseContainer<T> {
     const openApiResonse = obj?.OpenAPI_ServiceResponse
     if (this.isOpenApiServiceResponse(openApiResonse)) {
@@ -27,9 +40,7 @@ export class Response<T> {
     }
 
     const response = obj.response
-    if (!response) {
-      throw new ResponseParseError('response')
-    }
+    if (!response) throw new ResponseParseError('response')
 
     const header = this.parseHeader(response)
     const body = this.parseBody(response)
@@ -40,7 +51,7 @@ export class Response<T> {
   }
 
   protected parseHeader(obj: Record<string, any>): ResponseContainer<T>['header'] {
-    const header = { ...obj.header }
+    const header = { ...(obj.header ?? {}) }
     if (!header) {
       throw new ResponseParseError('header')
     }
@@ -53,7 +64,7 @@ export class Response<T> {
   }
 
   protected parseBody(obj: Record<string, any>): ResponseContainer<T>['body'] {
-    const body = obj.body
+    const body = { ...(obj.body ?? {}) }
     if (!body) {
       throw new ResponseParseError('body')
     }
@@ -93,6 +104,9 @@ export class Response<T> {
           }, {}),
         ) as T[],
       },
+      numOfRows: body.numOfRows,
+      pageNo: body.pageNo,
+      totalCount: body.totalCount,
     }
   }
 

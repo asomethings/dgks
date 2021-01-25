@@ -7,5 +7,8 @@ export interface ResponseContainer<T> {
     items: {
       item: T[]
     }
+    numOfRows: number
+    pageNo: number
+    totalCount: number
   }
 }
