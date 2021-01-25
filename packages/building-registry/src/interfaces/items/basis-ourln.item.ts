@@ -3,7 +3,7 @@
  */
 export interface BasisOurln {
   /**
-   * 행정표준코드
+   * 법정동코드
    * @example 10300
    */
   bjdongCd: string
@@ -12,24 +12,24 @@ export interface BasisOurln {
    * 건물명
    * @example 대치아파트 제217동
    */
-  bldNm: string
+  bldNm?: string
 
   /**
    * 블록
    */
-  block: string
+  block?: string
 
   /**
    * 번
    * @example 0012
    */
-  bun: string
+  bun?: string
 
   /**
    * 외필지수
    * @example 0
    */
-  bylotCnt: number
+  bylotCnt?: number
 
   /**
    * 생성일자
@@ -40,43 +40,43 @@ export interface BasisOurln {
   /**
    * 구역코드
    */
-  guyukCd: string
+  guyukCd?: number
 
   /**
    * 구역코드명
    */
-  guyukCdNm: string
+  guyukCdNm?: string
 
   /**
    * 지
    * @example 0000
    */
-  ji: string
+  ji?: string
 
   /**
    * 지구코드
    */
-  jiguCd: string
+  jiguCd?: number
 
   /**
    * 지구코드명
    */
-  jiguCdNm: string
+  jiguCdNm?: string
 
   /**
    * 지역코드
    */
-  jiyukCd: string
+  jiyukCd?: number
 
   /**
    * 지역코드명
    */
-  jiyukCdNm: string
+  jiyukCdNm?: string
 
   /**
    * 로트
    */
-  lot: string
+  lot?: string
 
   /**
    * 관리건축물대장PK
@@ -93,39 +93,39 @@ export interface BasisOurln {
   /**
    * 새주소법정동코드
    */
-  naBjdongCd: string
+  naBjdongCd?: number
 
   /**
    * 새주소본번
    */
-  naMainBun: number
+  naMainBun?: number
 
   /**
    * 새주소도로코드
    */
-  naRoadCd: string
+  naRoadCd?: number
 
   /**
    * 새주소부번
    */
-  naSubBun: number
+  naSubBun?: number
 
   /**
    * 새주소지상지하코드
    * @example 0
    */
-  naUgrndCd: string
+  naUgrndCd?: number
 
   /**
    * 도로명대지위치
    */
-  newPlatPlc: string
+  newPlatPlc?: string
 
   /**
-   * 0:대지 1:산 2:블록
+   * 대지구분코드
    * @example 0
    */
-  platGbCd: string
+  platGbCd?: number
 
   /**
    * 대지위치
@@ -137,40 +137,40 @@ export interface BasisOurln {
    * 대장구분코드
    * @example 2
    */
-  regstrGbCd: string
+  regstrGbCd?: number
 
   /**
    * 대장구분코드명
    * @example 집합
    */
-  regstrGbCdNm: string
+  regstrGbCdNm?: string
 
   /**
    * 대장종류코드
    * @example 4
    */
-  regstrKindCd: string
+  regstrKindCd?: number
 
   /**
    * 대장종류코드명
    * @example 전유부
    */
-  regstrKindCdNm: string
+  regstrKindCdNm?: string
 
   /**
    * 순번
    * @example 1
    */
-  rnum: number
+  rnum?: number
 
   /**
-   * 행정표준코드
+   * 시군구코드
    * @example 11680
    */
-  sigunguCd: string
+  sigunguCd: number
 
   /**
    * 특수지명
    */
-  splotNm: string
+  splotNm?: string
 }

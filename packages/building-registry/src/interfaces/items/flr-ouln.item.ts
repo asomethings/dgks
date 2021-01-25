@@ -6,16 +6,15 @@ export interface FlrOuln {
    * 면적(㎡)
    * @example 271.63
    */
-  area: number
+  area?: number
 
   /**
    * 면적제외여부
-   * 0: N | 1: Y
    */
-  areaExctYn: string
+  areaExctYn?: string
 
   /**
-   * 행정표준코드
+   * 법정동코드
    * @example 10300
    */
   bjdongCd: string
@@ -23,18 +22,18 @@ export interface FlrOuln {
   /**
    * 건물명
    */
-  bldNm: string
+  bldNm?: string
 
   /**
    * 블록
    */
-  block: string
+  block?: string
 
   /**
    * 번
    * @example 0012
    */
-  bun: string
+  bun?: string
 
   /**
    * 생성일자
@@ -45,78 +44,78 @@ export interface FlrOuln {
   /**
    * 동명칭
    */
-  dongNm: string
+  dongNm?: string
 
   /**
    * 기타용도
    * @example 교육연구및복지시설
    */
-  etcPurps: string
+  etcPurps?: string
 
   /**
    * 기타구조
    * @example 연와조
    */
-  etcStrct: string
+  etcStrct?: string
 
   /**
    * 층구분코드
    * @example 20
    */
-  flrGbCd: string
+  flrGbCd?: number
 
   /**
    * 층구분코드명
    * @example 지상
    */
-  flrGbCdNm: string
+  flrGbCdNm?: string
 
   /**
    * 층번호
    * @example 1
    */
-  flrNo: number
+  flrNo?: number
 
   /**
    * 층번호명
    * @example 1층
    */
-  flrNoNm: string
+  flrNoNm?: string
 
   /**
    * 지
    * @example 0000
    */
-  ji: string
+  ji?: string
 
   /**
    * 로트
    */
-  lot: string
+  lot?: string
 
   /**
    * 주부속구분코드
    * @example 0
    */
-  mainAtchGbCd: string
+  mainAtchGbCd?: number
 
   /**
    * 주부속구분코드명
    * @example 주건축물
    */
-  mainAtchGbCdNm: string
+  mainAtchGbCdNm?: string
 
   /**
    * 주용도코드
    * @example 10999
    */
-  mainPurpsCd: string
+  mainPurpsCd?: number
 
   /**
    * 주용도코드명
    * @example 기타교육연구시설
    */
-  mainPurpsCdNm: string
+  mainPurpsCdNm?: string
 
   /**
    * 관리건축물대장PK
@@ -127,39 +126,39 @@ export interface FlrOuln {
   /**
    * 새주소법정동코드
    */
-  naBjdongCd: string
+  naBjdongCd?: number
 
   /**
    * 새주소본번
    */
-  naMainBun: number
+  naMainBun?: number
 
   /**
    * 새주소도로코드
    */
-  naRoadCd: string
+  naRoadCd?: number
 
   /**
    * 새주소부번
    */
-  naSubBun: number
+  naSubBun?: number
 
   /**
    * 새주소지상지하코드
    * @example 0
    */
-  naUgrndCd: string
+  naUgrndCd?: number
 
   /**
    * 도로명대지위치
    */
-  newPlatPlc: string
+  newPlatPlc?: string
 
   /**
-   * 0:대지 1:산 2:블록
+   * 대지구분코드
    * @example 0
    */
-  platGbCd: string
+  platGbCd?: number
 
   /**
    * 대지위치
@@ -171,28 +170,28 @@ export interface FlrOuln {
    * 순번
    * @example 1
    */
-  rnum: number
+  rnum?: number
 
   /**
-   * 행정표준코드
+   * 시군구코드
    * @example 11680
    */
-  sigunguCd: string
+  sigunguCd: number
 
   /**
    * 특수지명
    */
-  splotNm: string
+  splotNm?: string
 
   /**
    * 구조코드
    * @example 11
    */
-  strctCd: string
+  strctCd?: number
 
   /**
    * 구조코드명
    * @example 벽돌구조
    */
-  strctCdNm: string
+  strctCdNm?: string
 }

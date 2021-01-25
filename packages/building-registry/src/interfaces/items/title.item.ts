@@ -6,53 +6,53 @@ export interface Title {
    * 건축면적(㎡)
    * @example 271.63
    */
-  archArea: number
+  archArea?: number
 
   /**
    * 부속건축물면적(㎡)
    * @example 0
    */
-  atchBldArea: number
+  atchBldArea?: number
 
   /**
    * 부속건축물수
    * @example 0
    */
-  atchBldCnt: number
+  atchBldCnt?: number
 
   /**
    * 건폐율(%)
    * @example 0
    */
-  bcRat: number
+  bcRat?: number
 
   /**
-   * 행정표준코드
+   * 법정동코드
    * @example 10300
    */
-  bjdongCd: string
+  bjdongCd: number
 
   /**
    * 건물명
    */
-  bldNm: string
+  bldNm?: string
 
   /**
    * 블록
    */
-  block: string
+  block?: string
 
   /**
    * 번
    * @example 0012
    */
-  bun: string
+  bun?: string
 
   /**
    * 외필지수
    * @example 0
    */
-  bylotCnt: number
+  bylotCnt?: number
 
   /**
    * 생성일자
@@ -63,159 +63,159 @@ export interface Title {
   /**
    * 동명칭
    */
-  dongNm: string
+  dongNm?: string
 
   /**
    * 비상용승강기수
    * @example 0
    */
-  emgenUseElvtCnt: number
+  emgenUseElvtCnt?: number
 
   /**
    * EPI점수
    * @example 0
    */
-  engrEpi: number
+  engrEpi?: number
 
   /**
    * 에너지효율등급
    */
-  engrGrade: string
+  engrGrade?: string
 
   /**
    * 에너지절감율
    * @example 0
    */
-  engrRat: number
+  engrRat?: number
 
   /**
    * 기타용도
    * @example 교육연구시설
    */
-  etcPurps: string
+  etcPurps?: string
 
   /**
    * 기타지붕
    * @example 아스팔트슁글
    */
-  etcRoof: string
+  etcRoof?: string
 
   /**
    * 기타구조
    * @example 연와조
    */
-  etcStrct: string
+  etcStrct?: string
 
   /**
    * 가구수(가구)
    * @example 0
    */
-  fmlyCnt: number
+  fmlyCnt?: number
 
   /**
    * 친환경건축물인증점수
    * @example 0
    */
-  gnBldCert: number
+  gnBldCert?: number
 
   /**
    * 친환경건축물등급
    */
-  gnBldGrade: string
+  gnBldGrade?: string
 
   /**
    * 지상층수
    * @example 2
    */
-  grndFlrCnt: number
+  grndFlrCnt?: number
 
   /**
    * 높이(m)
    * @example 0
    */
-  heit: number
+  heit?: number
 
   /**
    * 세대수(세대)
    * @example 0
    */
-  hhldCnt: number
+  hhldCnt?: number
 
   /**
    * 호수(호)
    * @example 0
    */
-  hoCnt: number
+  hoCnt?: number
 
   /**
    * 옥내자주식면적(㎡)
    * @example 0
    */
-  indrAutoArea: number
+  indrAutoArea?: number
 
   /**
    * 옥내자주식대수(대)
    * @example 0
    */
-  indrAutoUtcnt: number
+  indrAutoUtcnt?: number
 
   /**
    * 옥내기계식면적(㎡)
    * @example 0
    */
-  indrMechArea: number
+  indrMechArea?: number
 
   /**
    * 옥내기계식대수(대)
    * @example 0
    */
-  indrMechUtcnt: number
+  indrMechUtcnt?: number
 
   /**
    * 지능형건축물인증점수
    * @example 0
    */
-  itgBldCert: number
+  itgBldCert?: number
 
   /**
    * 지능형건축물등급
    */
-  itgBldGrade: string
+  itgBldGrade?: string
 
   /**
    * 지
    * @example 0000
    */
-  ji: string
+  ji?: string
 
   /**
    * 로트
    */
-  lot: string
+  lot?: string
 
   /**
    * 주부속구분코드
    * @example 0
    */
-  mainAtchGbCd: string
+  mainAtchGbCd?: number
 
   /**
    * 주부속구분코드명
    * @example 주건축물
    */
-  mainAtchGbCdNm: string
+  mainAtchGbCdNm?: string
 
   /**
    * 주용도코드
    * @example 10000
    */
-  mainPurpsCd: number
+  mainPurpsCd?: number
 
   /**
    * 주용도코드명
    * @example 교육연구시설
    */
-  mainPurpsCdNm: string
+  mainPurpsCdNm?: string
 
   /**
    * 관리건축물대장PK
@@ -226,69 +226,69 @@ export interface Title {
   /**
    * 새주소법정동코드
    */
-  naBjdongCd: string
+  naBjdongCd?: number
 
   /**
    * 새주소본번
    */
-  naMainBun: number
+  naMainBun?: number
 
   /**
    * 새주소도로코드
    */
-  naRoadCd: string
+  naRoadCd?: number
 
   /**
    * 새주소부번
    */
-  naSubBun: number
+  naSubBun?: number
 
   /**
    * 새주소지상지하코드
    * @example 0
    */
-  naUgrndCd: string
+  naUgrndCd?: number
 
   /**
    * 도로명대지위치
    */
-  newPlatPlc: string
+  newPlatPlc?: string
 
   /**
    * 옥외자주식면적(㎡)
    * @example 0
    */
-  oudrAutoArea: number
+  oudrAutoArea?: number
 
   /**
    * 옥외자주식대수(대)
    * @example 0
    */
-  oudrAutoUtcnt: number
+  oudrAutoUtcnt?: number
 
   /**
    * 옥외기계식면적(㎡)
    * @example 0
    */
-  oudrMechArea: number
+  oudrMechArea?: number
 
   /**
    * 옥외기계식대수(대)
    * @example 0
    */
-  oudrMechUtcnt: number
+  oudrMechUtcnt?: number
 
   /**
    * 대지면적(㎡)
    * @example 0
    */
-  platArea: number
+  platArea?: number
 
   /**
-   * 0:대지 1:산 2:블록
+   * 대지구분코드
    * @example 0
    */
-  platGbCd: string
+  platGbCd?: number
 
   /**
    * 대지위치
@@ -300,154 +300,154 @@ export interface Title {
    * 허가일
    * @example 19891226
    */
-  pmsDay: string
+  pmsDay?: string
 
   /**
    * 허가번호구분코드
    */
-  pmsnoGbCd: string
+  pmsnoGbCd?: number
 
   /**
    * 허가번호구분코드명
    */
-  pmsnoGbCdNm: string
+  pmsnoGbCdNm?: string
 
   /**
    * 허가번호기관코드
    */
-  pmsnoKikCd: string
+  pmsnoKikCd?: number
 
   /**
    * 허가번호기관코드명
    */
-  pmsnoKikCdNm: string
+  pmsnoKikCdNm?: string
 
   /**
    * 허가번호년
    */
-  pmsnoYear: string
+  pmsnoYear?: string
 
   /**
    * 대장구분코드
    * @example 1
    */
-  regstrGbCd: string
+  regstrGbCd?: number
 
   /**
    * 대장구분코드명
    * @example 일반
    */
-  regstrGbCdNm: string
+  regstrGbCdNm?: string
 
   /**
    * 대장종류코드
    * @example 2
    */
-  regstrKindCd: string
+  regstrKindCd?: number
 
   /**
    * 대장종류코드명
    * @example 일반건축물
    */
-  regstrKindCdNm: string
+  regstrKindCdNm?: string
 
   /**
    * 승용승강기수
    * @example 0
    */
-  rideUseElvtCnt: number
+  rideUseElvtCnt?: number
 
   /**
    * 순번
    * @example 1
    */
-  rnum: number
+  rnum?: number
 
   /**
    * 지붕코드
    * @example 90
    */
-  roofCd: string
+  roofCd?: number
 
   /**
    * 지붕코드명
    * @example 기타지붕
    */
-  roofCdNm: string
+  roofCdNm?: string
 
   /**
-   * 내진 능력
+   * 내진능력
    * @example VII-0.169g
    */
-  rserthqkAblty: string
+  rserthqkAblty?: string
 
   /**
-   * 내진 설계 적용 여부
+   * 내진설계적용여부
    * @example 1
    */
-  rserthqkDsgnApplyYn: number
+  rserthqkDsgnApplyYn?: string
 
   /**
-   * 행정표준코드
+   * 시군구코드
    * @example 11680
    */
-  sigunguCd: string
+  sigunguCd: number
 
   /**
    * 특수지명
    */
-  splotNm: string
+  splotNm?: string
 
   /**
    * 착공일
    */
-  stcnsDay: string
+  stcnsDay?: string
 
   /**
    * 구조코드
    * @example 11
    */
-  strctCd: string
+  strctCd?: number
 
   /**
    * 구조코드명
    * @example 벽돌구조
    */
-  strctCdNm: string
+  strctCdNm?: string
 
   /**
    * 연면적(㎡)
    * @example 536.06
    */
-  totArea: number
+  totArea?: number
 
   /**
    * 총동연면적(㎡)
    * @example 536.06
    */
-  totDongTotArea: number
+  totDongTotArea?: number
 
   /**
    * 지하층수
    * @example 0
    */
-  ugrndFlrCnt: number
+  ugrndFlrCnt?: number
 
   /**
    * 사용승인일
    * @example 19911120
    */
-  useAprDay: string
+  useAprDay?: string
 
   /**
    * 용적률(%)
    * @example 0
    */
-  vlRat: number
+  vlRat?: number
 
   /**
    * 용적률산정연면적(㎡)
    * @example 536.06
    */
-  vlRatEstmTotArea: number
+  vlRatEstmTotArea?: number
 }

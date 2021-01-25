@@ -6,28 +6,28 @@ export interface RecapTitle {
    * 건축면적(㎡)
    * @example 15324.37
    */
-  archArea: number
+  archArea?: number
 
   /**
    * 부속건축물면적(㎡)
    * @example 64.26
    */
-  atchBldArea: number
+  atchBldArea?: number
 
   /**
    * 부속건축물수
    * @example 3
    */
-  atchBldCnt: number
+  atchBldCnt?: number
 
   /**
    * 건폐율(%)
    * @example 0
    */
-  bcRat: number
+  bcRat?: number
 
   /**
-   * 행정표준코드
+   * 법정동코드
    * @example 10300
    */
   bjdongCd: string
@@ -36,24 +36,24 @@ export interface RecapTitle {
    * 건물명
    * @example 대치,대청 아파트
    */
-  bldNm: string
+  bldNm?: string
 
   /**
    * 블록
    */
-  block: string
+  block?: string
 
   /**
    * 번
    * @example 0012
    */
-  bun: string
+  bun?: string
 
   /**
    * 외필지수
    * @example 0
    */
-  bylotCnt: number
+  bylotCnt?: number
 
   /**
    * 생성일자
@@ -65,117 +65,117 @@ export interface RecapTitle {
    * EPI점수
    * @example 0
    */
-  engrEpi: number
+  engrEpi?: number
 
   /**
    * 에너지효율등급
    */
-  engrGrade: string
+  engrGrade?: string
 
   /**
    * 에너지절감율
    * @example 0
    */
-  engrRat: number
+  engrRat?: number
 
   /**
    * 기타용도
    * @example 주거시설 근린생활시설
    */
-  etcPurps: string
+  etcPurps?: string
 
   /**
    * 가구수(가구)
    * @example 0
    */
-  fmlyCnt: number
+  fmlyCnt?: number
 
   /**
    * 친환경건축물인증점수
    * @example 0
    */
-  gnBldCert: number
+  gnBldCert?: number
 
   /**
    * 친환경건축물등급
    */
-  gnBldGrade: string
+  gnBldGrade?: string
 
   /**
    * 세대수(세대)
    * @example 4199
    */
-  hhldCnt: number
+  hhldCnt?: number
 
   /**
    * 호수(호)
    * @example 0
    */
-  hoCnt: number
+  hoCnt?: number
 
   /**
    * 옥내자주식면적(㎡)
    * @example 0
    */
-  indrAutoArea: number
+  indrAutoArea?: number
 
   /**
    * 옥내자주식대수(대)
    * @example 0
    */
-  indrAutoUtcnt: number
+  indrAutoUtcnt?: number
 
   /**
    * 옥내기계식면적(㎡)
    * @example 0
    */
-  indrMechArea: number
+  indrMechArea?: number
 
   /**
    * 옥내기계식대수(대)
    * @example 0
    */
-  indrMechUtcnt: number
+  indrMechUtcnt?: number
 
   /**
    * 지능형건축물인증점수
    * @example 0
    */
-  itgBldCert: number
+  itgBldCert?: number
 
   /**
    * 지능형건축물등급
    */
-  itgBldGrade: string
+  itgBldGrade?: string
 
   /**
    * 지
    * @example 0000
    */
-  ji: string
+  ji?: string
 
   /**
    * 로트
    */
-  lot: string
+  lot?: string
 
   /**
    * 주건축물수
    * @example 27
    */
-  mainBldCnt: number
+  mainBldCnt?: number
 
   /**
    * 주용도코드
    * @example 02000
    */
-  mainPurpsCd: string
+  mainPurpsCd?: number
 
   /**
    * 주용도코드명
    * @example 공동주택
    */
-  mainPurpsCdNm: string
+  mainPurpsCdNm?: string
 
   /**
    * 관리건축물대장PK
@@ -187,85 +187,85 @@ export interface RecapTitle {
    * 새주소법정동코드
    * @example 10301
    */
-  naBjdongCd: string
+  naBjdongCd?: number
 
   /**
    * 새주소본번
    * @example 5
    */
-  naMainBun: number
+  naMainBun?: number
 
   /**
    * 새주소도로코드
    * @example 116804166040
    */
-  naRoadCd: string
+  naRoadCd?: number
 
   /**
    * 새주소부번
    * @example 0
    */
-  naSubBun: number
+  naSubBun?: number
 
   /**
    * 새주소지상지하코드
    * @example 0
    */
-  naUgrndCd: string
+  naUgrndCd?: number
 
   /**
    * 신구대장구분코드
    * @example 0
    */
-  newOldRegstrGbCd: string
+  newOldRegstrGbCd?: number
 
   /**
    * 신구대장구분코드명
    * @example 구대장
    */
-  newOldRegstrGbCdNm: string
+  newOldRegstrGbCdNm?: string
 
   /**
    * 도로명대지위치
    * @example 서울특별시강남구개포로109길5
    */
-  newPlatPlc: string
+  newPlatPlc?: string
 
   /**
    * 옥외자주식면적(㎡)
    * @example 0
    */
-  oudrAutoArea: number
+  oudrAutoArea?: number
 
   /**
    * 옥외자주식대수(대)
    * @example 0
    */
-  oudrAutoUtcnt: number
+  oudrAutoUtcnt?: number
 
   /**
    * 옥외기계식면적(㎡)
    * @example 0
    */
-  oudrMechArea: number
+  oudrMechArea?: number
 
   /**
    * 옥외기계식대수(대)
    * @example 0
    */
-  oudrMechUtcnt: number
+  oudrMechUtcnt?: number
 
   /**
    * 대지면적(㎡)
    * @example 0
    */
-  platArea: number
+  platArea?: number
 
   /**
-   * 0:대지 1:산 2:블록
+   * 대지구분코드
    * @example 0
    */
-  platGbCd: string
+  platGbCd?: number
 
   /**
    * 대지위치
@@ -276,105 +276,105 @@ export interface RecapTitle {
   /**
    * 허가일
    */
-  pmsDay: string
+  pmsDay?: string
 
   /**
    * 허가번호구분코드
    */
-  pmsnoGbCd: string
+  pmsnoGbCd?: number
 
   /**
    * 허가번호구분코드명
    */
-  pmsnoGbCdNm: string
+  pmsnoGbCdNm?: string
 
   /**
    * 허가번호기관코드
    */
-  pmsnoKikCd: string
+  pmsnoKikCd?: number
 
   /**
    * 허가번호기관코드명
    */
-  pmsnoKikCdNm: string
+  pmsnoKikCdNm?: string
 
   /**
    * 허가번호년
    */
-  pmsnoYear: string
+  pmsnoYear?: string
 
   /**
    * 대장구분코드
    * @example 2
    */
-  regstrGbCd: string
+  regstrGbCd?: number
 
   /**
    * 대장구분코드명
    * @example 집합
    */
-  regstrGbCdNm: string
+  regstrGbCdNm?: string
 
   /**
    * 대장종류코드
    * @example 1
    */
-  regstrKindCd: string
+  regstrKindCd?: number
 
   /**
    * 대장종류코드명
    * @example 총괄표제부
    */
-  regstrKindCdNm: string
+  regstrKindCdNm?: string
 
   /**
    * 순번
    * @example 1
    */
-  rnum: number
+  rnum?: number
 
   /**
-   * 행정표준코드
+   * 시군구코드
    * @example 11680
    */
-  sigunguCd: string
+  sigunguCd: number
 
   /**
    * 특수지명
    */
-  splotNm: string
+  splotNm?: string
 
   /**
    * 착공일
    */
-  stcnsDay: string
+  stcnsDay?: string
 
   /**
    * 연면적(㎡)
    * @example 223939
    */
-  totArea: number
+  totArea?: number
 
   /**
    * 총주차수
    * @example 0
    */
-  totPkngCnt: number
+  totPkngCnt?: number
 
   /**
    * 사용승인일
    */
-  useAprDay: string
+  useAprDay?: string
 
   /**
    * 용적률(%)
    * @example 0
    */
-  vlRat: number
+  vlRat?: number
 
   /**
    * 용적률산정연면적(㎡)
    * @example 211555.54
    */
-  vlRatEstmTotArea: number
+  vlRatEstmTotArea?: number
 }

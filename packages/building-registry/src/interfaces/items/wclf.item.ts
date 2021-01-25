@@ -3,7 +3,7 @@
  */
 export interface Wclf {
   /**
-   * 행정표준코드
+   * 법정동코드
    * @example 10300
    */
   bjdongCd: string
@@ -12,30 +12,30 @@ export interface Wclf {
    * 건물명
    * @example 대치,대청 아파트
    */
-  bldNm: string
+  bldNm?: string
 
   /**
    * 블록
    */
-  block: string
+  block?: string
 
   /**
    * 번
    * @example 0012
    */
-  bun: string
+  bun?: string
 
   /**
    * 용량(루베)
    * @example 0
    */
-  capaLube: number
+  capaLube?: number
 
   /**
    * 용량(인용)
    * @example 300
    */
-  capaPsper: number
+  capaPsper?: number
 
   /**
    * 생성일자
@@ -46,18 +46,18 @@ export interface Wclf {
   /**
    * 기타형식
    */
-  etcMode: string
+  etcMode?: string
 
   /**
    * 지
    * @example 0000
    */
-  ji: string
+  ji?: string
 
   /**
    * 로트
    */
-  lot: string
+  lot?: string
 
   /**
    * 관리건축물대장PK
@@ -69,55 +69,55 @@ export interface Wclf {
    * 형식코드
    * @example 299
    */
-  modeCd: string
+  modeCd?: number
 
   /**
    * 형식코드명
    * @example 기타단독정화조
    */
-  modeCdNm: string
+  modeCdNm?: string
 
   /**
    * 새주소법정동코드
    * @example 10301
    */
-  naBjdongCd: string
+  naBjdongCd?: number
 
   /**
    * 새주소본번
    * @example 5
    */
-  naMainBun: number
+  naMainBun?: number
 
   /**
    * 새주소도로코드
    * @example 116804166040
    */
-  naRoadCd: string
+  naRoadCd?: number
 
   /**
    * 새주소부번
    * @example 0
    */
-  naSubBun: number
+  naSubBun?: number
 
   /**
    * 새주소지상지하코드
    * @example 0
    */
-  naUgrndCd: string
+  naUgrndCd?: number
 
   /**
    * 도로명대지위치
    * @example 서울특별시강남구개포로109길5
    */
-  newPlatPlc: string
+  newPlatPlc?: string
 
   /**
-   * 0:대지 1:산 2:블록
+   * 대지구분코드
    * @example 0
    */
-  platGbCd: string
+  platGbCd?: number
 
   /**
    * 대지위치
@@ -129,50 +129,50 @@ export interface Wclf {
    * 대장구분코드
    * @example 2
    */
-  regstrGbCd: string
+  regstrGbCd?: number
 
   /**
    * 대장구분코드명
    * @example 집합
    */
-  regstrGbCdNm: string
+  regstrGbCdNm?: string
 
   /**
    * 대장종류코드
    * @example 1
    */
-  regstrKindCd: string
+  regstrKindCd?: number
 
   /**
    * 대장종류코드명
    * @example 집합
    */
-  regstrKindCdNm: string
+  regstrKindCdNm?: string
 
   /**
    * 순번
    * @example 1
    */
-  rnum: number
+  rnum?: number
 
   /**
-   * 행정표준코드
+   * 시군구코드
    * @example 11680
    */
-  sigunguCd: string
+  sigunguCd: number
 
   /**
    * 특수지명
    */
-  splotNm: string
+  splotNm?: string
 
   /**
    * 단위구분코드
    */
-  unitGbCd: string
+  unitGbCd?: number
 
   /**
    * 단위구분코드명
    */
-  unitGbCdNm: string
+  unitGbCdNm?: string
 }

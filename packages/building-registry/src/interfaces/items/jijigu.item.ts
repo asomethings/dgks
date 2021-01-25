@@ -3,7 +3,7 @@
  */
 export interface Jijigu {
   /**
-   * 행정표준코드
+   * 법정동코드
    * @example 10300
    */
   bjdongCd: string
@@ -11,13 +11,13 @@ export interface Jijigu {
   /**
    * 블록
    */
-  block: string
+  block?: string
 
   /**
    * 번
    * @example 0012
    */
-  bun: string
+  bun?: string
 
   /**
    * 생성일자
@@ -29,42 +29,42 @@ export interface Jijigu {
    * 기타지역지구구역
    * @example 지구단위계획구역
    */
-  etcJijigu: string
+  etcJijigu?: string
 
   /**
    * 지
    * @example 0000
    */
-  ji: string
+  ji?: string
 
   /**
    * 지역지구구역코드
    * @example 300
    */
-  jijiguCd: string
+  jijiguCd?: number
 
   /**
    * 지역지구구역코드명
    * @example 지구단위계획구역
    */
-  jijiguCdNm: string
+  jijiguCdNm?: string
 
   /**
    * 지역지구구역구분코드
    * @example 3
    */
-  jijiguGbCd: string
+  jijiguGbCd?: number
 
   /**
    * 지역지구구역구분코드명
    * @example 용도구역코드
    */
-  jijiguGbCdNm: string
+  jijiguGbCdNm?: string
 
   /**
    * 로트
    */
-  lot: string
+  lot?: string
 
   /**
    * 관리건축물대장PK
@@ -76,13 +76,13 @@ export interface Jijigu {
    * 도로명대지위치
    * @example 서울특별시강남구개포로109길5
    */
-  newPlatPlc: string
+  newPlatPlc?: string
 
   /**
-   * 0:대지 1:산 2:블록
+   * 대지구분코드
    * @example 0
    */
-  platGbCd: string
+  platGbCd?: number
 
   /**
    * 대지위치
@@ -91,25 +91,25 @@ export interface Jijigu {
   platPlc: string
 
   /**
-   * 0: 일반 1: 대표
+   * 대표여부
    * @example 1
    */
-  reprYn: string
+  reprYn?: string
 
   /**
    * 순번
    * @example 1
    */
-  rnum: number
+  rnum?: number
 
   /**
-   * 행정표준코드
+   * 시군구코드
    * @example 11680
    */
-  sigunguCd: string
+  sigunguCd: number
 
   /**
    * 특수지명
    */
-  splotNm: string
+  splotNm?: string
 }
