@@ -1,6 +1,6 @@
 {
   "name": "@dgks/core",
-  "version": "0.0.0-beta.1",
+  "version": "0.0.0-beta.2",
   "description": "Core implementation for @dgks packages",
   "author": {
     "name": "Ewan Roh <asomethings@kakao.com>",
