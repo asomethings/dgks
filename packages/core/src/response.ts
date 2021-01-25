@@ -89,7 +89,7 @@ export class Response<T> {
               return { ...acc, [key]: val }
             }
 
-            return { ...acc, [key]: val.trim() === '' ? null : val }
+            return { ...acc, [key]: val.trim() === '' ? undefined : val }
           }, {}),
         ) as T[],
       },
