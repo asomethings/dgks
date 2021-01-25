@@ -1,1 +1,1 @@
-export * from './architecture-possession'
+export * from './architecture-possession.item'
