@@ -68,10 +68,12 @@ export class Response<T> {
 
     if (typeof body.items === 'string') {
       body.items = { item: [] }
+      return this.transformItems(body)
     }
 
     if (typeof body.items?.item === 'object') {
       body.items = { item: [{ ...body.items.item }] }
+      return this.transformItems(body)
     }
 
     return this.transformItems(body)
