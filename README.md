@@ -19,7 +19,7 @@ pnpm i @dgks/package-name
 npm i @dgks/package-name
 
 # yarn
-yarn add @tinyhttp/package-name
+yarn add @dgks/package-name
 ```
 
 ## License
