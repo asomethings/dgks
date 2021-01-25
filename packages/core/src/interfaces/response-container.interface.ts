@@ -1,3 +1,6 @@
+/**
+ * Response container used when parsing response to Response<T>
+ */
 export interface ResponseContainer<T> {
   header: {
     resultCode: string
