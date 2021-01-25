@@ -89,7 +89,7 @@ export class Response<T> {
               return { ...acc, [key]: val }
             }
 
-            return { ...acc, [key]: val === '' ? null : val }
+            return { ...acc, [key]: val.trim() === '' ? null : val }
           }, {}),
         ) as T[],
       },
