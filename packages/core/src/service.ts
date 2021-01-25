@@ -3,6 +3,11 @@ import got, { Got } from 'got'
 import { BaseServiceOptions, KeyOption } from './interfaces'
 import { Response } from './response'
 
+/**
+ * Abstract service for dgks
+ *
+ * @template S
+ */
 export abstract class Service<S> {
   protected readonly got: Got
 
@@ -29,6 +34,12 @@ export abstract class Service<S> {
   // ====================================
   // Abstract Function
   // ====================================
+
+  /**
+   * Parse search params (query params) to specific format
+   *
+   * @param {S} searchParams
+   */
   protected abstract parseSearchParams(
     searchParams: S,
   ): Record<string, string | number | boolean | null | undefined> | undefined
@@ -36,9 +47,16 @@ export abstract class Service<S> {
   // ====================================
   // Protected Function
   // ====================================
-  protected async get<T>(url: string, requestOptions: S): Promise<Response<T>> {
+
+  /**
+   * Sends GET request to url with options
+   *
+   * @param {url} url - suffix of url
+   * @param {S} searchParams - search params for requesting
+   */
+  protected async get<T>(url: string, searchParams: S): Promise<Response<T>> {
     const request = this.got(url, {
-      searchParams: this.parseSearchParams(requestOptions),
+      searchParams: this.parseSearchParams(searchParams),
     })
 
     const body = await request.json<Record<string, any>>()

@@ -1,6 +1,11 @@
 import { ResponseError, ResponseParseError, ServiceError, ServiceKeyNotRegistered } from './errors'
 import { OpenApiServiceResponse, ResponseContainer } from './interfaces'
 
+/**
+ * Response wrapping data.go.kr common formats
+ *
+ * @template T
+ */
 export class Response<T> {
   protected readonly parsedResponse: ResponseContainer<T>
 
@@ -8,18 +13,38 @@ export class Response<T> {
     this.parsedResponse = this.parseRawResponse(rawResponse)
   }
 
+  // ====================================
+  // Public Getters
+  // ====================================
+
+  /**
+   * Items of requested service
+   * @type {T[]}
+   */
   public get items(): T[] {
     return this.parsedResponse.body.items.item
   }
 
+  /**
+   * Requested number of rows
+   * @type {number}
+   */
   public get numOfRows(): number {
     return this.parsedResponse.body.numOfRows
   }
 
+  /**
+   * Current page
+   * @type {number}
+   */
   public get page(): number {
     return this.parsedResponse.body.pageNo
   }
 
+  /**
+   * Total count
+   * @type {number}
+   */
   public get totalCount(): number {
     return this.parsedResponse.body.totalCount
   }
@@ -28,6 +53,14 @@ export class Response<T> {
   // Protected Functions
   // ====================================
 
+  /**
+   * Parses raw json response to match response container interface
+   *
+   * @throws {ServiceKeyNotRegistered} Service key is not registed in 3rd party service
+   * @throws {ResponseParseError} Failed to parse response to what we want
+   * @param {Record<string, any>} obj - response to parse
+   * @returns {ResponseContainer<T>}
+   */
   protected parseRawResponse(obj: Record<string, any>): ResponseContainer<T> {
     const openApiResonse = obj?.OpenAPI_ServiceResponse
     if (this.isOpenApiServiceResponse(openApiResonse)) {
@@ -50,9 +83,17 @@ export class Response<T> {
     }
   }
 
+  /**
+   * Parses header object and checks result code
+   *
+   * @throws {ResponseParseError} Failed to parse given header
+   * @throws {ResponseError} Given header's response code is not what we expected
+   * @param {Record<string, any>} obj - header object to parse
+   * @returns {ResponseContainer<T>['header']}
+   */
   protected parseHeader(obj: Record<string, any>): ResponseContainer<T>['header'] {
     const header = { ...(obj.header ?? {}) }
-    if (!header) {
+    if (Object.keys(header).length === 0) {
       throw new ResponseParseError('header')
     }
 
@@ -63,9 +104,16 @@ export class Response<T> {
     return header
   }
 
+  /**
+   * Parses body object and transforms it
+   *
+   * @throws {ResponseParseError} Failed to parse given body
+   * @param {Record<string, any>} obj - header object to parse
+   * @returns {ResponseContainer<T>['body']}
+   */
   protected parseBody(obj: Record<string, any>): ResponseContainer<T>['body'] {
     const body = { ...(obj.body ?? {}) }
-    if (!body) {
+    if (Object.keys(body).length === 0) {
       throw new ResponseParseError('body')
     }
 
@@ -90,6 +138,12 @@ export class Response<T> {
     return this.transformItems(body)
   }
 
+  /**
+   * Replaces empty string to undefined
+   *
+   * @param {ResponseContainer<T>['body']} body - Body to transform
+   * @returns {ResponseContainer<T>['body']}
+   */
   protected transformItems(body: ResponseContainer<T>['body']): ResponseContainer<T>['body'] {
     const items = body.items.item
     return {
@@ -110,6 +164,12 @@ export class Response<T> {
     }
   }
 
+  /**
+   * Checks if object is typeof OpenApiServiceResponse
+   *
+   * @param {Record<string, any>} obj - Object to check
+   * @returns {boolean}
+   */
   protected isOpenApiServiceResponse(obj: Record<string, any>): obj is OpenApiServiceResponse {
     return obj?.cmmMsgHeader?.errMsg && obj?.cmmMsgHeader?.returnAuthMsg && obj?.cmmMsgHeader?.returnAuthMsg
   }
