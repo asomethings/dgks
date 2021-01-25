@@ -30,7 +30,7 @@ importers:
     dependencies:
       '@dgks/core': link:../core
     specifiers:
-      '@dgks/core': workspace:^0.0.0-beta.0
+      '@dgks/core': workspace:^1.0.0-beta.0
   packages/core:
     dependencies:
       fast-xml-parser: 3.17.6
@@ -42,7 +42,7 @@ importers:
     dependencies:
       '@dgks/core': link:../core
     specifiers:
-      '@dgks/core': workspace:^0.0.0-beta.0
+      '@dgks/core': workspace:^1.0.0-beta.0
 lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.12.11:
