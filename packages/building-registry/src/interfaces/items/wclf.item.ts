@@ -41,7 +41,7 @@ export interface Wclf {
    * 생성일자
    * @example 20120822
    */
-  crtnDay: string
+  crtnDay: number
 
   /**
    * 기타형식

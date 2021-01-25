@@ -90,7 +90,7 @@ export interface AtchJibun {
    * 생성일자
    * @example 20140325
    */
-  crtnDay: string
+  crtnDay: number
 
   /**
    * 지

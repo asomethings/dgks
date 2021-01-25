@@ -59,7 +59,7 @@ export interface RecapTitle {
    * 생성일자
    * @example 20120822
    */
-  crtnDay: string
+  crtnDay: number
 
   /**
    * EPI점수

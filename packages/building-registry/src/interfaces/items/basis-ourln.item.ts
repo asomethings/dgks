@@ -35,7 +35,7 @@ export interface BasisOurln {
    * 생성일자
    * @example 20090320
    */
-  crtnDay: string
+  crtnDay: number
 
   /**
    * 구역코드

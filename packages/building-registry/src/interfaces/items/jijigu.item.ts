@@ -23,7 +23,7 @@ export interface Jijigu {
    * 생성일자
    * @example 20120822
    */
-  crtnDay: string
+  crtnDay: number
 
   /**
    * 기타지역지구구역

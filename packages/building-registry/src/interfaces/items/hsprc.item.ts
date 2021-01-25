@@ -35,7 +35,7 @@ export interface Hsprc {
    * 생성일자
    * @example 20090320
    */
-  crtnDay: string
+  crtnDay: number
 
   /**
    * 주택가격

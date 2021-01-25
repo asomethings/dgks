@@ -29,7 +29,7 @@ export interface Expos {
    * 생성일자
    * @example 20090320
    */
-  crtnDay: string
+  crtnDay: number
 
   /**
    * 동명칭

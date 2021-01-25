@@ -58,7 +58,7 @@ export interface Title {
    * 생성일자
    * @example 20131207
    */
-  crtnDay: string
+  crtnDay: number
 
   /**
    * 동명칭
