@@ -35,8 +35,10 @@ importers:
     dependencies:
       fast-xml-parser: 3.17.6
     devDependencies:
+      axios: 0.21.1
       got: 11.8.1
     specifiers:
+      axios: ^0.21.1
       fast-xml-parser: ^3.17.0
       got: ^11.8.1
   packages/owner-info:
@@ -535,6 +537,12 @@ packages:
       node: '>= 4.0.0'
     resolution:
       integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
+  /axios/0.21.1:
+    dependencies:
+      follow-redirects: 1.13.2
+    dev: true
+    resolution:
+      integrity: sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
   /balanced-match/1.0.0:
     dev: true
     resolution:
@@ -1130,6 +1138,17 @@ packages:
     dev: true
     resolution:
       integrity: sha512-zAoAQiudy+r5SvnSw3KJy5os/oRJYHzrzja/tBDqrZtNhUw8bt6y8OBzMWcjWr+8liV8Eb6yOhw8WZ7VFZ5ZzA==
+  /follow-redirects/1.13.2:
+    dev: true
+    engines:
+      node: '>=4.0'
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    resolution:
+      integrity: sha512-6mPTgLxYm3r6Bkkg0vNM0HTjfGrOEtsfbhagQvbxDEsEkpNhw582upBaoRZylzen6krEmxXJgt9Ju6HiI4O7BA==
   /fs-extra/9.1.0:
     dependencies:
       at-least-node: 1.0.0

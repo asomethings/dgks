@@ -33,13 +33,18 @@
     "build": "tsc -p ./tsconfig.json"
   },
   "devDependencies": {
+    "axios": "^0.21.1",
     "got": "^11.8.1"
   },
   "peerDependencies": {
+    "axios": "^0.21.1",
     "got": "^11.8.1"
   },
   "peerDependenciesMeta": {
     "got": {
+      "optional": true
+    },
+    "axios": {
       "optional": true
     }
   }
