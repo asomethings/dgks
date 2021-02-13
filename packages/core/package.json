@@ -26,11 +26,21 @@
     "node": ">=12"
   },
   "dependencies": {
-    "fast-xml-parser": "^3.17.0",
-    "got": "^11.8.0"
+    "fast-xml-parser": "^3.17.0"
   },
   "scripts": {
     "prepublishOnly": "pnpm build",
     "build": "tsc -p ./tsconfig.json"
+  },
+  "devDependencies": {
+    "got": "^11.8.1"
+  },
+  "peerDependencies": {
+    "got": "^11.8.1"
+  },
+  "peerDependenciesMeta": {
+    "got": {
+      "optional": true
+    }
   }
 }
