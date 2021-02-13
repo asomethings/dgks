@@ -1,8 +1,7 @@
-import { BaseEngine } from './engines'
+import { AxiosEngine, BaseEngine, EngineTypes } from './engines'
 import { GotEngine } from './engines/got.engine'
 import { BaseServiceOptions, KeyOption } from './interfaces'
 import { Response } from './response'
-
 /**
  * Abstract service for dgks
  *
@@ -12,7 +11,22 @@ export abstract class Service<S> {
   protected readonly engine: BaseEngine
 
   constructor(options: KeyOption & BaseServiceOptions) {
-    this.engine = new GotEngine(options)
+    if (options.engine && typeof options.engine !== 'string') {
+      this.engine = new options.engine(options)
+    } else {
+      this.engine = new (this.getEngine(options.engine))(options)
+    }
+  }
+
+  private getEngine(name: EngineTypes = 'got'): typeof AxiosEngine | typeof GotEngine {
+    switch (name) {
+      case 'axios':
+        return AxiosEngine
+      case 'got':
+        return GotEngine
+      default:
+        return GotEngine
+    }
   }
 
   // ====================================
