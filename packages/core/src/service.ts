@@ -1,5 +1,5 @@
-import * as xmlParser from 'fast-xml-parser'
-import got, { Got } from 'got'
+import { BaseEngine } from './engines'
+import { GotEngine } from './engines/got.engine'
 import { BaseServiceOptions, KeyOption } from './interfaces'
 import { Response } from './response'
 
@@ -9,26 +9,10 @@ import { Response } from './response'
  * @template S
  */
 export abstract class Service<S> {
-  protected readonly got: Got
+  protected readonly engine: BaseEngine
 
   constructor(options: KeyOption & BaseServiceOptions) {
-    this.got = got.extend({
-      prefixUrl: `http://apis.data.go.kr/${options.id}/${options.name}/`,
-      searchParams: {
-        ServiceKey: options.key,
-      },
-      parseJson: (body) => {
-        try {
-          return JSON.parse(body)
-        } catch {}
-
-        try {
-          return xmlParser.parse(body, { parseTrueNumberOnly: true })
-        } catch {}
-
-        return body
-      },
-    })
+    this.engine = new GotEngine(options)
   }
 
   // ====================================
@@ -55,12 +39,7 @@ export abstract class Service<S> {
    * @param {S} searchParams - search params for requesting
    */
   protected async get<T>(url: string, searchParams: S): Promise<Response<T>> {
-    const request = this.got(url, {
-      searchParams: this.parseSearchParams(searchParams),
-    })
-
-    const body = await request.json<Record<string, any>>()
-    return new Response(body)
+    return this.engine.get(url, this.parseSearchParams(searchParams))
   }
 
   /**
