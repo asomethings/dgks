@@ -8,7 +8,7 @@ export class GotEngine extends BaseEngine {
   protected readonly got: Got
 
   constructor(options: EngineOptions) {
-    super()
+    super(options)
     this.got = this.engine.extend({
       prefixUrl: `http://apis.data.go.kr/${options.id}/${options.name}/`,
       searchParams: {
