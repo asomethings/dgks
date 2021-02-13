@@ -1,4 +1,4 @@
-import { KeyOption } from './key-option.interface'
+import { KeyOption } from './key-option.interface';
 
 /**
  * Engine options
