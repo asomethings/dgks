@@ -37,10 +37,12 @@ importers:
     devDependencies:
       axios: 0.21.1
       got: 11.8.1
+      type-fest: 0.21.0
     specifiers:
       axios: ^0.21.1
       fast-xml-parser: ^3.17.0
       got: ^11.8.1
+      type-fest: ^0.21.0
   packages/owner-info:
     dependencies:
       '@dgks/core': link:../core
@@ -2320,6 +2322,12 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-OIAYXk8+ISY+qTOwkHtKqzAuxchoMiD9Udx+FSGQDuiRR+PJKJHc2NJAXlbhkGwTt/4/nKZxELY1w3ReWOL8mw==
+  /type-fest/0.21.0:
+    dev: true
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-1l9DXlbflV880ZijiK9qx4jdD0VOqogKx5i33t3hDN+ZiaqMOr7aSwH/jzmnBXPQon+SNvr+cH6wltATEzGJEg==
   /type-fest/0.6.0:
     dev: true
     engines:
