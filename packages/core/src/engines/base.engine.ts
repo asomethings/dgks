@@ -1,4 +1,4 @@
-import { EngineOptions } from '../interfaces';
+import { EngineOptions } from '../interfaces'
 import { Response } from '../response'
 
 export abstract class BaseEngine {

@@ -1,5 +1,5 @@
-import { Class } from 'type-fest';
-import { BaseEngine, EngineTypes } from '../../engines';
+import { Class } from 'type-fest'
+import { BaseEngine, EngineTypes } from '../../engines'
 /**
  * Options when used for extending abstract service
  */

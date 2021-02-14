@@ -44,6 +44,7 @@ export class AxiosEngine extends BaseEngine {
   }
 
   public get engine(): typeof axios {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
     return require('axios').default
   }
 }
