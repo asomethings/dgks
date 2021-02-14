@@ -1,5 +1,5 @@
-import { ExtendOptions } from 'got'
-
+import { Class } from 'type-fest'
+import { BaseEngine, EngineTypes } from '../../engines'
 /**
  * Options when used for extending abstract service
  */
@@ -17,7 +17,8 @@ export interface BaseServiceOptions {
   name: string
 
   /**
-   * Extend got options
+   * Engine to use
+   * @example got
    */
-  gotOptions?: ExtendOptions
+  engine?: EngineTypes | Class<BaseEngine>
 }

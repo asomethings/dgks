@@ -1,0 +1,17 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.workingDirectories": [
+    {
+      "directory": "./packages/core",
+      "!cwd": true
+    },
+    {
+      "directory": "./packages/building-registry",
+      "!cwd": true
+    },
+    {
+      "directory": "./packages/owner-info",
+      "!cwd": true
+    }
+  ]
+}
