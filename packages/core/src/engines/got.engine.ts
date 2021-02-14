@@ -1,5 +1,6 @@
 import * as xml from 'fast-xml-parser'
 import { Got } from 'got'
+import { DGKS_KEY_NAME, DGKS_PREFIX_URL } from '../constants'
 import { EngineOptions } from '../interfaces'
 import { Response } from '../response'
 import { BaseEngine } from './base.engine'
@@ -10,9 +11,9 @@ export class GotEngine extends BaseEngine {
   constructor(options: EngineOptions) {
     super(options)
     this.got = this.engine.extend({
-      prefixUrl: `http://apis.data.go.kr/${options.id}/${options.name}/`,
+      prefixUrl: `${DGKS_PREFIX_URL}${options.id}/${options.name}/`,
       searchParams: {
-        ServiceKey: options.key,
+        [DGKS_KEY_NAME]: options.key,
       },
       parseJson: (body) => {
         try {
