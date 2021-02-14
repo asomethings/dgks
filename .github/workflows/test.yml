@@ -43,7 +43,9 @@ jobs:
 
       - run: pnpm test:codecov
 
-      - run: pnpm codecov
+      - uses: codecov/codecov-action@v1
+        with:
+          flags: core
   typescript:
     runs-on: ubuntu-latest
     steps:

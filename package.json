@@ -35,7 +35,7 @@
     "test": "pnpm -r test",
     "test:coverage": "pnpm -r test:coverage",
     "test:codecov": "pnpm -r test:codecov",
-    "codecov": "codecov",
+    "codecov": "pnpm -r codecov",
     "ts:check": "pnpm -r ts:check",
     "lint:check": "pnpm -r lint:check"
   }

@@ -34,6 +34,7 @@
     "test": "ava",
     "test:coverage": "nyc ava --use-spawn-wrap",
     "test:codecov": "nyc report --reporter=text-lcov > coverage.lcov",
+    "codecov": "bash <(curl https://codecov.io/bash) -f coverage.lcov -F core",
     "ts:check": "tsc --project ./tsconfig.json --noEmit",
     "lint:check": "eslint --max-warnings 0 --ext .ts ."
   },
