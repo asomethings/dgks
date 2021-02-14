@@ -34,6 +34,7 @@
     "test": "ava",
     "test:coverage": "nyc ava --use-spawn-wrap",
     "test:codecov": "nyc report --reporter=text-lcov > coverage.lcov",
+    "codecov": "codecov",
     "ts:check": "tsc --project ./tsconfig.json --noEmit",
     "lint:check": "eslint --max-warnings 0 --ext .ts ."
   },
@@ -55,11 +56,11 @@
     }
   },
   "ava": {
-		"extensions": [
-			"ts"
-		],
-		"require": [
-			"ts-node/register"
-		]
-	}
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  }
 }
