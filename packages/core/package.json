@@ -30,7 +30,8 @@
   },
   "scripts": {
     "prepublishOnly": "pnpm build",
-    "build": "tsc -p ./tsconfig.json"
+    "build": "tsc -p ./tsconfig.json",
+    "test": "ava"
   },
   "devDependencies": {
     "axios": "^0.21.1",
@@ -48,5 +49,13 @@
     "axios": {
       "optional": true
     }
-  }
+  },
+  "ava": {
+		"extensions": [
+			"ts"
+		],
+		"require": [
+			"ts-node/register"
+		]
+	}
 }
