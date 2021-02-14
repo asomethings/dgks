@@ -1,0 +1,4 @@
+flags:
+  core:
+    paths:
+      - packages/core
