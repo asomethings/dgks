@@ -145,7 +145,7 @@ export class Response<T> {
    * @returns {ResponseContainer<T>['body']}
    */
   protected transformItems(body: ResponseContainer<T>['body']): ResponseContainer<T>['body'] {
-    const items = body.items.item
+    const items = body.items.item ?? []
     return {
       items: {
         item: items.map((obj) =>
@@ -171,6 +171,6 @@ export class Response<T> {
    * @returns {boolean}
    */
   protected isOpenApiServiceResponse(obj: Record<string, any>): obj is OpenApiServiceResponse {
-    return obj?.cmmMsgHeader?.errMsg && obj?.cmmMsgHeader?.returnAuthMsg && obj?.cmmMsgHeader?.returnAuthMsg
+    return obj?.cmmMsgHeader?.errMsg && obj?.cmmMsgHeader?.returnAuthMsg && obj?.cmmMsgHeader?.returnReasonCode
   }
 }
