@@ -34,7 +34,7 @@ export class GotEngine extends BaseEngine {
     params?: Record<string, string | number | boolean | null | undefined>,
   ): Promise<Response<T>> {
     const request = this.got(path, {
-      searchParams: params,
+      searchParams: params ?? {},
     })
 
     const body = await request.json<T>()
