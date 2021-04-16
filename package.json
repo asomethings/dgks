@@ -9,7 +9,7 @@
   "license": "MIT",
   "engines": {
     "node": ">=12.4.0",
-    "pnpm": ">=5.15.0"
+    "pnpm": ">=6.0.0"
   },
   "devDependencies": {
     "@ava/typescript": "1.1.1",
@@ -30,6 +30,7 @@
     "typescript": "4.2.4"
   },
   "scripts": {
+    "prepare": "husky install",
     "prepublishOnly": "pnpm -r build",
     "build": "pnpm -r build",
     "test": "pnpm -r test",
