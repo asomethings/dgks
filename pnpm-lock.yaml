@@ -49,13 +49,13 @@ importers:
       axios: 0.21.1
       fast-xml-parser: ^3.17.0
       got: 11.8.2
-      type-fest: 0.21.0
+      type-fest: 1.0.2
     dependencies:
       fast-xml-parser: 3.17.6
     devDependencies:
       axios: 0.21.1
       got: 11.8.2
-      type-fest: 0.21.0
+      type-fest: 1.0.2
 
   packages/owner-info:
     specifiers:
@@ -3659,11 +3659,6 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /type-fest/0.21.0:
-    resolution: {integrity: sha512-1l9DXlbflV880ZijiK9qx4jdD0VOqogKx5i33t3hDN+ZiaqMOr7aSwH/jzmnBXPQon+SNvr+cH6wltATEzGJEg==}
-    engines: {node: '>=10'}
-    dev: true
-
   /type-fest/0.3.1:
     resolution: {integrity: sha512-cUGJnCdr4STbePCgqNFbpVNCepa+kAVohJs1sLhxzdH+gnEoOd8VhbYa7pD3zZYGiURWM2xzEII3fQcRizDkYQ==}
     engines: {node: '>=6'}
@@ -3677,6 +3672,11 @@ packages:
   /type-fest/0.8.1:
     resolution: {integrity: sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==}
     engines: {node: '>=8'}
+    dev: true
+
+  /type-fest/1.0.2:
+    resolution: {integrity: sha512-a720oz3Kjbp3ll0zkeN9qjRhO7I34MKMhPGQiQJAmaZQZQ1lo+NWThK322f7sXV+kTg9B1Ybt16KgBXWgteT8w==}
+    engines: {node: '>=10'}
     dev: true
 
   /typedarray-to-buffer/3.1.5:
