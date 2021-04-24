@@ -12,7 +12,7 @@ importers:
       ava: 3.15.0
       codecov: 3.8.1
       eslint: 7.24.0
-      eslint-config-prettier: 8.2.0
+      eslint-config-prettier: 8.3.0
       eslint-plugin-node: 11.1.0
       eslint-plugin-prettier: 3.4.0
       husky: 6.0.0
@@ -29,9 +29,9 @@ importers:
       ava: 3.15.0
       codecov: 3.8.1
       eslint: 7.24.0
-      eslint-config-prettier: 8.2.0_eslint@7.24.0
+      eslint-config-prettier: 8.3.0_eslint@7.24.0
       eslint-plugin-node: 11.1.0_eslint@7.24.0
-      eslint-plugin-prettier: 3.4.0_64fa1aa96df95a5df14fce32631d8e89
+      eslint-plugin-prettier: 3.4.0_5b2ede4f2b1d121133ada39ddf306cab
       husky: 6.0.0
       nyc: 15.1.0
       prettier: 2.2.1
@@ -1481,8 +1481,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-prettier/8.2.0_eslint@7.24.0:
-    resolution: {integrity: sha512-dWV9EVeSo2qodOPi1iBYU/x6F6diHv8uujxbxr77xExs3zTAlNXvVZKiyLsQGNz7yPV2K49JY5WjPzNIuDc2Bw==}
+  /eslint-config-prettier/8.3.0_eslint@7.24.0:
+    resolution: {integrity: sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -1516,7 +1516,7 @@ packages:
       semver: 6.3.0
     dev: true
 
-  /eslint-plugin-prettier/3.4.0_64fa1aa96df95a5df14fce32631d8e89:
+  /eslint-plugin-prettier/3.4.0_5b2ede4f2b1d121133ada39ddf306cab:
     resolution: {integrity: sha512-UDK6rJT6INSfcOo545jiaOwB701uAIt2/dR7WnFQoGCVl1/EMqdANBmwUaqqQ45aXprsTGzSa39LI1PyuRBxxw==}
     engines: {node: '>=6.0.0'}
     peerDependencies:
@@ -1528,7 +1528,7 @@ packages:
         optional: true
     dependencies:
       eslint: 7.24.0
-      eslint-config-prettier: 8.2.0_eslint@7.24.0
+      eslint-config-prettier: 8.3.0_eslint@7.24.0
       prettier: 2.2.1
       prettier-linter-helpers: 1.0.0
     dev: true
