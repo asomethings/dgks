@@ -41,7 +41,7 @@
   "devDependencies": {
     "axios": "0.21.1",
     "got": "11.8.2",
-    "type-fest": "1.0.2"
+    "type-fest": "1.4.0"
   },
   "peerDependencies": {
     "axios": "^0.21.1",

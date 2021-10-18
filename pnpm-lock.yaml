@@ -49,13 +49,13 @@ importers:
       axios: 0.21.1
       fast-xml-parser: ^3.17.0
       got: 11.8.2
-      type-fest: 1.0.2
+      type-fest: 1.4.0
     dependencies:
       fast-xml-parser: 3.17.6
     devDependencies:
       axios: 0.21.1
       got: 11.8.2
-      type-fest: 1.0.2
+      type-fest: 1.4.0
 
   packages/owner-info:
     specifiers:
@@ -1792,6 +1792,7 @@ packages:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -3674,8 +3675,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /type-fest/1.0.2:
-    resolution: {integrity: sha512-a720oz3Kjbp3ll0zkeN9qjRhO7I34MKMhPGQiQJAmaZQZQ1lo+NWThK322f7sXV+kTg9B1Ybt16KgBXWgteT8w==}
+  /type-fest/1.4.0:
+    resolution: {integrity: sha512-yGSza74xk0UG8k+pLh5oeoYirvIiWo5t0/o3zHHAO2tRDiZcxWP7fywNlXhqb6/r6sWvwi+RsyQMWhVLe4BVuA==}
     engines: {node: '>=10'}
     dev: true
 
