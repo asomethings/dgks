@@ -39,7 +39,7 @@
     "lint:check": "eslint --max-warnings 0 --ext .ts ."
   },
   "devDependencies": {
-    "axios": "0.21.1",
+    "axios": "0.21.2",
     "got": "11.8.2",
     "type-fest": "1.0.2"
   },
