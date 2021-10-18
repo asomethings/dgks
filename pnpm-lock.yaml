@@ -14,7 +14,7 @@ importers:
       eslint: 7.24.0
       eslint-config-prettier: 8.2.0
       eslint-plugin-node: 11.1.0
-      eslint-plugin-prettier: 3.4.0
+      eslint-plugin-prettier: 3.4.1
       husky: 6.0.0
       nyc: 15.1.0
       prettier: 2.2.1
@@ -31,7 +31,7 @@ importers:
       eslint: 7.24.0
       eslint-config-prettier: 8.2.0_eslint@7.24.0
       eslint-plugin-node: 11.1.0_eslint@7.24.0
-      eslint-plugin-prettier: 3.4.0_64fa1aa96df95a5df14fce32631d8e89
+      eslint-plugin-prettier: 3.4.1_64fa1aa96df95a5df14fce32631d8e89
       husky: 6.0.0
       nyc: 15.1.0
       prettier: 2.2.1
@@ -1516,8 +1516,8 @@ packages:
       semver: 6.3.0
     dev: true
 
-  /eslint-plugin-prettier/3.4.0_64fa1aa96df95a5df14fce32631d8e89:
-    resolution: {integrity: sha512-UDK6rJT6INSfcOo545jiaOwB701uAIt2/dR7WnFQoGCVl1/EMqdANBmwUaqqQ45aXprsTGzSa39LI1PyuRBxxw==}
+  /eslint-plugin-prettier/3.4.1_64fa1aa96df95a5df14fce32631d8e89:
+    resolution: {integrity: sha512-htg25EUYUeIhKHXjOinK4BgCcDwtLHjqaxCDsMy5nbnUMkKFvIhMVCp+5GFUXQ4Nr8lBsPqtGAqBenbpFqAA2g==}
     engines: {node: '>=6.0.0'}
     peerDependencies:
       eslint: '>=5.0.0'
@@ -1792,6 +1792,7 @@ packages:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+    requiresBuild: true
     dev: true
     optional: true
 
